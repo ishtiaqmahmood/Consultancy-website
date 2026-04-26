@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import hero from "../public/images/gallery/hero.png";
 import herobg from "../public/images/illustrations/hero-bg.png";
 
@@ -6,25 +7,27 @@ function HomeComponent() {
   return (
     <>
       <section className="py-0" id="home">
-        <div
-          className="bg-holder d-none d-md-block"
-          style={{
-            backgroundImage: `url(${hero.src})`,
-            backgroundPosition: "right bottom",
-            backgroundSize: "contain",
-            marginTop: "5.625rem",
-          }}
-        ></div>
+        <div className="bg-holder d-none d-md-block" style={{ marginTop: "5.625rem" }}>
+          <Image
+            src={hero}
+            alt="Hero Background"
+            layout="fill"
+            objectFit="contain"
+            objectPosition="right bottom"
+            priority
+          />
+        </div>
 
-        <div
-          className="bg-holder d-block d-md-none"
-          style={{
-            backgroundImage: `url(${herobg.src})`,
-            backgroundPosition: "right top",
-            backgroundSize: "contain",
-            marginTop: "5.625rem",
-          }}
-        ></div>
+        <div className="bg-holder d-block d-md-none" style={{ marginTop: "5.625rem" }}>
+          <Image
+            src={herobg}
+            alt="Hero Background Mobile"
+            layout="fill"
+            objectFit="contain"
+            objectPosition="right top"
+            priority
+          />
+        </div>
 
         <div className="container">
           <div className="row align-items-center min-vh-md-75 mt-7">

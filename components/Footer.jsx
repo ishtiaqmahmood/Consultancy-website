@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 function Footer() {
   return (
@@ -6,66 +7,56 @@ function Footer() {
       <div className="container">
         <div className="row justify-content-between pb-2 pt-8">
           <div className="col-12 col-lg-auto mb-5 mb-lg-0">
-            {/* <a className="d-flex align-items-center fw-semi-bold fs-3" href="#">
-              {" "}
-              <img
-                className="me-3"
-                src="/images/gallery/footer-logo.png"
-                alt="..."
-              />
-            </a> */}
-            <h1>La Plaza</h1>
+            <Link href="/">
+              <a className="text-decoration-none text-white">
+                <h1 className="fw-bold">La Plaza</h1>
+              </a>
+            </Link>
             <p className="my-3 text-100 fw-light">
               Zindabazar, Sylhet, Bangladesh
               <br />
-              
             </p>
           </div>
           <div className="col-auto mb-3">
             <ul className="list-unstyled mb-md-4 mb-lg-0">
               <li className="mb-3">
-                <a className="text-100 fw-light text-decoration-none" href="#!">
-                  About Us
-                </a>
+                <Link href="#!">
+                  <a className="text-100 fw-light text-decoration-none">About Us</a>
+                </Link>
               </li>
               <li className="mb-3">
-                <a className="text-100 fw-light text-decoration-none" href="#!">
-                  Responsibilities
-                </a>
+                <Link href="#!">
+                  <a className="text-100 fw-light text-decoration-none">Responsibilities</a>
+                </Link>
               </li>
               <li className="mb-3">
-                <a className="text-100 fw-light text-decoration-none" href="#!">
-                  Our Services
-                </a>
+                <Link href="#!">
+                  <a className="text-100 fw-light text-decoration-none">Our Services</a>
+                </Link>
               </li>
               <li className="mb-3">
-                <a className="text-100 fw-light text-decoration-none" href="#!">
-                  Contact
-                </a>
+                <Link href="#!">
+                  <a className="text-100 fw-light text-decoration-none">Contact</a>
+                </Link>
               </li>
             </ul>
           </div>
           <div className="col-auto mb-3">
             <ul className="list-unstyled mb-md-4 mb-lg-0">
               <li className="mb-3">
-                <a className="text-100 fw-light text-decoration-none" href="#!">
-                  Disclaimer
-                </a>
+                <Link href="#!">
+                  <a className="text-100 fw-light text-decoration-none">Disclaimer</a>
+                </Link>
               </li>
               <li className="mb-3">
-                <a className="text-100 fw-light text-decoration-none" href="#!">
-                  Disclaimer
-                </a>
+                <Link href="#!">
+                  <a className="text-100 fw-light text-decoration-none">Privacy Policy</a>
+                </Link>
               </li>
               <li className="mb-3">
-                <a className="text-100 fw-light text-decoration-none" href="#!">
-                  Privacy Policy
-                </a>
-              </li>
-              <li className="mb-3">
-                <a className="text-100 fw-light text-decoration-none" href="#!">
-                  Terms of Service
-                </a>
+                <Link href="#!">
+                  <a className="text-100 fw-light text-decoration-none">Terms of Service</a>
+                </Link>
               </li>
             </ul>
           </div>
